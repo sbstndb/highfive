@@ -10,12 +10,12 @@ https://github.com/BlueBrain/HighFive/issues/864
 
 # HighFive - HDF5 header-only C++ Library
 
-[![Doxygen -> gh-pages](https://github.com/highfive-devs/highfive/workflows/gh-pages/badge.svg?branch=master)](https://BlueBrain.github.io/HighFive/actions/workflows/gh-pages.yml?query=branch%3Amaster)
+[![Doxygen -> gh-pages](https://github.com/highfive-devs/highfive/actions/workflows/gh-pages.yml/badge.svg?branch=main)](https://highfive-devs.github.io/highfive)
 [![codecov](https://codecov.io/gh/BlueBrain/HighFive/branch/master/graph/badge.svg?token=UBKxHEn7RS)](https://codecov.io/gh/BlueBrain/HighFive)
 [![Integration Tests](https://github.com/highfive-devs/bbp-integration/actions/workflows/integration.yml/badge.svg)](https://github.com/highfive-devs/bbp-integration/actions/workflows/integration.yml)
 [![Zenodo](https://zenodo.org/badge/47755262.svg)](https://zenodo.org/doi/10.5281/zenodo.10679422)
 
-Documentation: https://bluebrain.github.io/HighFive/
+Documentation: https://highfive-devs.github.io/highfive/
 
 ## Brief
 
@@ -56,7 +56,7 @@ It integrates nicely with other CMake projects by defining (and exporting) a Hig
 We use semantic versioning. Currently, we're preparing `v3` which contains a
 limited set of breaking changes required to eliminate undesireable behaviour or
 modernize outdated patterns. We provide a
-[Migration Guide](https://bluebrain.github.io/HighFive/md__2home_2runner_2work_2_high_five_2_high_five_2doc_2migration__guide.html),
+[Migration Guide](https://highfive-devs.github.io/highfive/md__2home_2runner_2work_2_high_five_2_high_five_2doc_2migration__guide.html),
 please report any missing or incorrect information to help others make the
 switch more easily.
 
