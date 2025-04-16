@@ -1,4 +1,8 @@
+#if XTENSOR_VERSION_MINOR < 26
 #include <xtensor/xarray.hpp>
+#else
+#include <xtensor/containers/xarray.hpp>
+#endif
 
 #include <highfive/H5Easy.hpp>
 
