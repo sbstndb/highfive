@@ -22,8 +22,13 @@
 
 
 #ifdef HIGHFIVE_TEST_XTENSOR
+#if XTENSOR_VERSION_MINOR < 26
 #include <xtensor/xrandom.hpp>
 #include <xtensor/xview.hpp>
+#else
+#include <xtensor/generators/xrandom.hpp>
+#include <xtensor/views/xview.hpp>
+#endif
 #endif
 
 #ifdef HIGHFIVE_TEST_EIGEN
