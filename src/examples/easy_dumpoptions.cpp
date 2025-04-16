@@ -13,7 +13,11 @@
 
 // optionally enable plug-in xtensor
 #ifdef H5_USE_XTENSOR
+#if XTENSOR_VERSION_MINOR < 26
 #include <xtensor/xtensor.hpp>
+#else
+#include <xtensor/containers/xtensor.hpp>
+#endif
 #endif
 
 // optionally enable plug-in Eigen

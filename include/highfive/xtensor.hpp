@@ -3,9 +3,16 @@
 #include "bits/H5Inspector_decl.hpp"
 #include "H5Exception.hpp"
 
+
+#if XTENSOR_VERSION_MINOR < 26
 #include <xtensor/xtensor.hpp>
 #include <xtensor/xarray.hpp>
 #include <xtensor/xadapt.hpp>
+#else
+#include <xtensor/containers/xtensor.hpp>
+#include <xtensor/containers/xarray.hpp>
+#include <xtensor/containers/xadapt.hpp>
+#endif
 
 namespace HighFive {
 namespace details {

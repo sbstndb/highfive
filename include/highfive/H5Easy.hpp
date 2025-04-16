@@ -28,8 +28,13 @@
 #endif
 
 #ifdef H5_USE_XTENSOR
+#if XTENSOR_VERSION_MINOR < 26
 #include <xtensor/xarray.hpp>
 #include <xtensor/xtensor.hpp>
+#else
+#include <xtensor/containers/xarray.hpp>
+#include <xtensor/containers/xtensor.hpp>
+#endif
 #include "xtensor.hpp"
 #endif
 

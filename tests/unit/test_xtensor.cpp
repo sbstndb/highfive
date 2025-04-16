@@ -13,9 +13,15 @@
 #include <catch2/catch_template_test_macros.hpp>
 
 #include <highfive/highfive.hpp>
+#if XTENSOR_VERSION_MINOR < 26
 #include <xtensor/xtensor.hpp>
 #include <xtensor/xview.hpp>
 #include <xtensor/xio.hpp>
+#else
+#include <xtensor/containers/xtensor.hpp>
+#include <xtensor/views/xview.hpp>
+#include <xtensor/io/xio.hpp>
+#endif
 #include <highfive/xtensor.hpp>
 
 #include "data_generator.hpp"
